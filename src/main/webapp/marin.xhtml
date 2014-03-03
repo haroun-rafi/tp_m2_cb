@@ -46,6 +46,25 @@
 	</table>
 	
 	</h:form>
+	<h3>Supression par nom</h3>
+
+	<h:form>
+       <table>
+    
+         <tr>
+		<td>
+			<h:outputLabel for="firstName" value="nom"/>
+		</td>
+		<td>
+			<h:inputText   id="lastName" value="#{marinControler.marin.nom}"/>
+		</td>
+		<td>
+			<h:commandButton value="Supprimer" action="#{marinControler.delete()}" />
+		   </td>
+	</tr>
+     </table>
+  </h:form>
+  </div>
 
 </body>
 </html>
