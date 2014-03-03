@@ -31,4 +31,10 @@ public class MarinControler implements Serializable {
 	public void setMarin(Marin marin) {
 		this.marin = marin;
 	}
+	public void delete() {
+		
+		marins= marinEJB.deleteByName(marin);
+		System.out.println("Marin persisté : " + marin.getNom()) ;
+		
+	}
 }
