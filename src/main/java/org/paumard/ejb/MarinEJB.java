@@ -27,4 +27,10 @@ public class MarinEJB {
 		}
 		return marins;
 	}
+	@SuppressWarnings("unused")
+ +        public void retreaveMarin(Long Id ){
+ +	 Marin marin=new Marin();
+ +	marin= em.find(Marin.class, Id);
+ +			
+ +	}
 }
