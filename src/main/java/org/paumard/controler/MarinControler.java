@@ -37,4 +37,11 @@ public class MarinControler implements Serializable {
 		System.out.println("Marin persisté : " + marin.getNom()) ;
 		
 	}
+	public void retreaveById() {
+	
+ 	marinEJB.retreaveMarin(marin.getId_rech());
+ 	
+ 	System.out.println("Marin recherché : " + marin.getNom()) ;
+	
+ }
 }
